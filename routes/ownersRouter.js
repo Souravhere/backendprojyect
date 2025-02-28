@@ -7,7 +7,7 @@ router.get('/', (req, res) =>{
     res.send('Welcome to Owner Route')
 })
 if(process.env.NODE_ENV === 'development'){ 
-    router.get('/create',(req, res) => {
+    router.post('/create',(req, res) => {
         res.send('Owner Created');
     })
 }
